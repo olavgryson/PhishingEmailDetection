@@ -55,8 +55,7 @@ The model was evaluated using the F1-score metric, which balances precision and 
 *   **Recall**: 1.00 (Synthetic Data)
 *   **F1 Score**: 1.00
 
-*Note: The perfect score is expected due to the synthetic nature of the dataset. On real-world data (e.g., Nazario Corpus), we would expect F1 scores around 0.92-0.95.*
-
+Note: The perfect score is expected due to the synthetic nature of the dataset.
 ---
 
 ## 4. Deployment Considerations
