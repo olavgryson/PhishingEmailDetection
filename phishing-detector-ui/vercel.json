@@ -2,7 +2,7 @@
     "rewrites": [
         {
             "source": "/api/(.*)",
-            "destination": "https://phishing-backend-placeholder.onrender.com/predict"
+            "destination": "https://phishingemaildetection-5irj.onrender.com/predict"
         },
         {
             "source": "/(.*)",
