@@ -1,25 +1,27 @@
 # Use an official Python runtime as a parent image
 FROM python:3.9-slim
 
-# Set the working directory in the container
+# Set the working directory to the root of the project inside the container
 WORKDIR /app
 
-# Copy the requirements file into the container at /app
+# Copy requirements (they are in the build context root)
 COPY requirements.txt .
 
-# Install any needed packages specified in requirements.txt
+# Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the current directory contents into the container at /app
-COPY . .
+# Copy the current directory contents into the container at /app/backend
+# This preserves the 'backend' package structure required by imports
+COPY . ./backend
 
-# Expose port 8000
+# Set Python path to include /app so 'backend' is recognized as a package
+ENV PYTHONPATH=/app
+
+# Train the model during the build process
+RUN python backend/train_model.py
+
+# Expose port
 EXPOSE 8000
 
-# Define environment variable
-ENV MODULE_NAME="server"
-ENV VARIABLE_NAME="app"
-ENV PORT="8000"
-
-# Run server.py when the container launches
-CMD ["python", "server.py"]
+# Run server.py from the backend package
+CMD ["python", "backend/server.py"]
