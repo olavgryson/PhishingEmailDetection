@@ -75,3 +75,14 @@ To ensure valid results:
 ## 5. Conclusion
 
 The project successfully delivers a working proof-of-concept for automated phishing detection. The combination of structural HTML analysis and URL heuristics provides a multi-layered defense. The modern UI ensures the tool is accessible to end-users, while the API-based backend allows for easy integration into existing mail servers or security workflows.
+
+
+---
+
+## AI Usage
+
+I mainly used it for frontend development, especially when I ran into issues with modals or needed additional information.
+
+I also used AI to explore ways to improve my work and to generate many useful graphs that I could incorporate into the project.
+
+Before starting a chat, I always prepared a well-structured prompt in a separate chat window, where I uploaded my proposal. The AI then helped refine that into a prompt that I could reuse in a different context to achieve better results.
