@@ -2,6 +2,9 @@
 
 A full-stack application designed to detect phishing attempts in emails using Machine Learning and heuristic URL analysis. This system allows users to upload `.eml` or `.msg` files and receive an instant risk assessment based on the email's content, structure, and embedded links.
 
+
+link: https://phishing-email-detection-lilac.vercel.app/
+
 ## Features
 
 -   **.eml & .msg File Analysis**: Drag-and-drop interface for analyzing raw email files.
