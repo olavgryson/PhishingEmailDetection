@@ -61,16 +61,15 @@ To balance performance (Real-time detection) with costs (Cloud resources):
 
 ---
 
-## Appendix: AI Tools Used
+## AI Usage
 
-| Tool | Purpose | How it was used |
-| :--- | :--- | :--- |
-| **ChatGPT / Gemini** | Code Assistance | Used to generate boilerplate code for the Dockerfiles and debug the URL regex patterns in `server.py`. |
-| **GitHub Copilot** | Autocomplete | Accelerated writing the React components and Python Pydantic models. |
-| **Scikit-Learn** | ML Library | Not a "GenAI" tool, but the core ML framework used for the Random Forest implementation. |
+I mainly used it for frontend development, especially when I ran into issues with modals or needed additional information.
 
+I also used AI to explore ways to improve my work and to generate many useful graphs that I could incorporate into the project.
+
+Before starting a chat, I always prepared a well-structured prompt in a separate chat window, where I uploaded my proposal. The AI then helped refine that into a prompt that I could reuse in a different context to achieve better results.
 ---
 
 ## Deliverables Links
-- **GitHub Repo**: [Link to Repo] (Local Project)
-- **Deployment URL**: [Vercel Placeholder]
+- **GitHub Repo**: https://github.com/olavgryson/PhishingEmailDetection
+- **Deployment URL**: https://phishing-email-detection-lilac.vercel.app/
